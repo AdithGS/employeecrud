@@ -4,9 +4,65 @@
       "name": "Anirudh",
       "email": "anirudh@gmail.com",
       "contactNum": 8156903134,
-      "dob": "2555",
+      "dob": "10/11/1994",
       "sex": "Male",
       "id": 10
+    },
+    {
+      "name": "Adith Gs",
+      "email": "adithgs111@gmail.com",
+      "contactNum": 8156903134,
+      "dob": "29/11/1997",
+      "sex": "Male",
+      "id": 11
+    },
+    {
+      "name": "Sachin",
+      "email": "surasachin@gmail.com",
+      "contactNum": 8547598512,
+      "dob": "19/11/1997",
+      "sex": "Male",
+      "id": 12
+    },
+    {
+      "name": "Akash Ar",
+      "email": "arakash@gmail.com",
+      "contactNum": 8547962541,
+      "dob": "29/09/1997",
+      "sex": "Male",
+      "id": 13
+    },
+    {
+      "name": "Artha",
+      "email": "arthas@gmail.com",
+      "contactNum": 8245965745,
+      "dob": "28/7/1996",
+      "sex": "Female",
+      "id": 14
+    },
+    {
+      "name": "Geetha T",
+      "email": "geethat@gmail.com",
+      "contactNum": 9874587465,
+      "dob": "29/4/1985",
+      "sex": "Female",
+      "id": 15
+    },
+    {
+      "name": "Anusha",
+      "email": "anush@gmail.com",
+      "contactNum": 9495297115,
+      "dob": "20/10/1995",
+      "sex": "Female",
+      "id": 16
+    },
+    {
+      "name": "Arohi",
+      "email": "arohi@gmail.com",
+      "contactNum": 8075981546,
+      "dob": "1997-06-05",
+      "sex": "Female",
+      "id": 17
     }
   ]
 }
