@@ -1,68 +1,12 @@
 {
   "Employee": [
     {
-      "name": "akash",
-      "email": "akskks",
-      "contactNum": 8521466522,
-      "dob": "29/11/1997",
-      "sex": "",
-      "id": 2
-    },
-    {
-      "name": "asdas",
-      "email": "asdsadsa",
-      "contactNum": 123123,
-      "dob": "23123213",
+      "name": "Anirudh",
+      "email": "anirudh@gmail.com",
+      "contactNum": 8156903134,
+      "dob": "2555",
       "sex": "Male",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "contactNum": "",
-      "dob": "",
-      "sex": "",
-      "id": 4
-    },
-    {
-      "name": "ad",
-      "email": "sad",
-      "contactNum": 12323,
-      "dob": "213213",
-      "sex": "Male",
-      "id": 5
-    },
-    {
-      "name": "asas",
-      "email": "asdasdas",
-      "contactNum": 123213213,
-      "dob": "2324324",
-      "sex": "Male",
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "contactNum": "",
-      "dob": "",
-      "sex": "Male",
-      "id": 7
-    },
-    {
-      "name": null,
-      "email": null,
-      "contactNum": null,
-      "dob": null,
-      "sex": null,
-      "id": 8
-    },
-    {
-      "name": null,
-      "email": null,
-      "contactNum": null,
-      "dob": null,
-      "sex": null,
-      "id": 9
+      "id": 10
     }
   ]
 }
