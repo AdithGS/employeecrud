@@ -40,7 +40,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <button type="button" class="btn btn-primary text-center"
-                                            (click)="onSubmit()">Submit</button>
+                                            (click)="onSubmit()" [disabled]="newUser.invalid">Submit</button>
                                     </div>
                                     <div class="col">
                                         <button type="button" class="btn btn-secondary text-center"

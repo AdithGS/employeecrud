@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
+import { Validators } from '@angular/forms';
 // import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -20,11 +21,11 @@ export class EmployeeDetailsComponent implements OnInit {
   
   constructor(private data:DataService,private route:ActivatedRoute,private router:Router,private fb:FormBuilder) { }
   newUser = this.fb.group({
-    name:[''],
-    email:[''],
-    contactNum:[''],
-    dob:[''],
-    sex:['']
+    name:['',Validators.required],
+    email:['',Validators.required],
+    contactNum:['',Validators.required],
+    dob:['',Validators.required],
+    sex:['',Validators.required]
 
   })
 

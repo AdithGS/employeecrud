@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { DataService } from '../data.service';
 @Component({
@@ -8,16 +9,14 @@ import { DataService } from '../data.service';
 })
 export class NewUserComponent implements OnInit {
 
-
-
   constructor(private fb:FormBuilder,private empService:DataService) { }
 
   newUser = this.fb.group({
-    name:[''],
-    email:[''],
-    contactNum:[''],
-    dob:[''],
-    sex:['']
+    name:['',Validators.required],
+    email:['',Validators.required],
+    contactNum:['',Validators.required],
+    dob:['',Validators.required],
+    sex:['',Validators.required]
 
   })
 
