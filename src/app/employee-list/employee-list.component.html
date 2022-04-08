@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2 class="text-dark text-center"> <span><em>Employee List</em></span></h2>
+        </div>
+    </div>
+    <div class="row mt-4">
+
+        <div class="col-12 float-end">
+            <button type="button" class="btn btn-secondary" routerLink="/newUser"><i class="fa fa-user-plus"
+                    style="font-size:36px"></i>Add Employee</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12  text-justify">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 bg-list m-3 p-3" >
+                    <span>
+                        <em>
+                            <ul *ngFor="let item of details;let i =index">
+                                <li (click)="empDet(item)">{{i}} - {{item.name}}</li>
+                            </ul>
+                        </em>
+                    </span>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</div>

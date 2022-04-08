@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+            <h3 class="text-dark"><span><em>Employee Details</em></span></h3>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Contact Number</th>
+                        <th scope="col">Date Of Birth</th>
+                        <th scope="col">Sex</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{singleEmp?.name}}</td>
+                        <td>{{singleEmp?.email}}</td>
+                        <td>{{singleEmp?.contactNum}}</td>
+                        <td>{{singleEmp?.dob}}</td>
+                        <td>{{singleEmp?.sex}}</td>
+
+
+                        <td><button type="button" class="btn btn-success mr-4" (click)="edit()">Edit</button>
+                            <div class="space"></div>
+                            <button type="button" class="btn btn-danger mr-4" (click)="del()">Delete</button>
+                            <div class="space"></div>
+                            <button type="button" class="btn btn-dark mr-4"  routerLink="/emplist">Back</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6" *ngIf="editVal">
+            <form [formGroup]="newUser">
+
+                <div class="form-group mb-2">
+                    <label for="name">Name </label>
+                    <input type="text" class="form-control" formControlName="name" placeholder=" Full Name">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" formControlName="email" placeholder="Email">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="contactNum">Contact Number</label>
+                    <input type="number" class="form-control" formControlName="contactNum" placeholder="Contact Number">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="name">Date Of Birth </label>
+                    <input type="text" class="form-control" formControlName="dob" placeholder="Date Of Birth">
+                </div>
+               <div class="form-group mb-2">
+                <label for="sex">Sex</label>
+                <select class="form-select" aria-label="Default select example" formControlName="sex">
+                    <option selected disabled>Select Sex</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    
+                  </select>
+               </div>
+
+                <div class="form-group mb-2">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary text-center"
+                                (click)="onSubmit()">Submit</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger text-center"
+                             (click)="close()">Close </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
